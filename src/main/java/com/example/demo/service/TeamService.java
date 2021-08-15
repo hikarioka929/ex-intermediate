@@ -27,8 +27,8 @@ public class TeamService {
 	 * @return 全野球チーム情報
 	 */
 	public List<Team> showList(){
-		List<Team> teams = teamRepository.findAll();
-		return teams;
+		List<Team> teamList = teamRepository.findAll();
+		return teamList;
 	}
 	
 	/**

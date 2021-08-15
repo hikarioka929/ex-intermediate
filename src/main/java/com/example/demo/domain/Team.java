@@ -21,21 +21,6 @@ public class Team {
 	/** 歴史 */
 	private String history;
 
-	public Team() {
-
-	}
-
-	public Team(Integer id, String leagueName, String teamName, String headquarters, String inauguration,
-			String history) {
-		super();
-		this.id = id;
-		this.leagueName = leagueName;
-		this.teamName = teamName;
-		this.headquarters = headquarters;
-		this.inauguration = inauguration;
-		this.history = history;
-	}
-
 	public Integer getId() {
 		return id;
 	}
