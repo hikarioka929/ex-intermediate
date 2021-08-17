@@ -28,7 +28,13 @@ public class HotelService {
 	 * @return ホテル情報
 	 */
 	public List<Hotel> searchByLessThanPrice(Integer price){
-		List<Hotel> hotelList = hotelRepository.searchByLessThanPrice(price);
-		return hotelList;
+		
+		if( price != null ) {
+			List<Hotel> hotelList = hotelRepository.searchByLessThanPrice(price);
+			return hotelList;
+		} else {
+			List<Hotel> hotelList = hotelRepository.findAll();
+			return hotelList;
+		}
 	}
 }

@@ -29,7 +29,7 @@ public class Ex02Controller {
 	 */
 	@RequestMapping("")
 	public String index() {
-		return "ex02/search";
+		return "ex02/result";
 	}
 	
 	/**
